@@ -21,8 +21,44 @@
     </nav>
 
 </header>
+<div>
 <h1 class="headingtext">Contact</h1>
-<div>En div</div>
-  <script src="/script.js"></script>  
+    <div id="error"></div>
+    
+    <form class="contact-form" method="GET">
+        <div>
+         <label for="name">Name:</label>
+         <input type="text" id="name" placeholder="Enter your name" required>
+         <div class="error-message" id="error-fName"></div>
+        </div>
+
+        <div>
+         <label for="subject">Subject:</label>
+         <input type="text" id="subject" placeholder="Enter your name" >
+         <div class="error-message" id="error-subject"> </div>
+      </div>
+
+       <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <div class="error-message" id="error-email"> </div>
+      </div>
+
+        <div>
+        <label for="adress">Adress:</label>
+        <input type="text" id="adress" placeholder="Enter your adress">
+        <div class="error-message" id="error-adress"></div>
+      </div>
+
+        <div>
+           <button type="submit">submit</button>
+        </div>
+    </form>
+    <h3 class="success-message"></h3>
+</div>
+
+
+  <script src="/script.js"></script> 
+  <script src="/contact.js"></script>
 </body>
 </html>

@@ -57,3 +57,27 @@ h1:hover {
   padding: 1rem;
   margin: 1em;
 }
+
+.contact-ul {
+  text-decoration: none;
+}
+
+.contact-li {
+  display: block;
+}
+
+.contact-ul {
+  text-align: left;
+}
+
+div {
+  margin: 1em;
+}
+
+.error-message {
+  /*display: none;*/
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 2px;
+  margin-left: 0px;
+}
