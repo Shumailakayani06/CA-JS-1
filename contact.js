@@ -41,6 +41,10 @@ function verifyForm(e){
         subject.value="";
         email.value="";
         adress.value="";
+        fNameError.innerHTML="";
+        subjectError.innerHTML="";
+        emailError.innerHTML="";
+        adressError.innerHTML="";
         e.preventDefault();
 
 
