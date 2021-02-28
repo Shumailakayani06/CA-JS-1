@@ -39,10 +39,11 @@ async function getData(){
 function addDetail(userInfo) {
     setSpinner(false);
 
-    detailUsers.innerHTML = `  
+    detailUsers.innerHTML = ` <div class="detailDiv">
+    <p>ID: ${userInfo.id}</p> 
     <p>First name:${userInfo.first_name}</p>
     <p>${userInfo.last_name}</p>
-    <p>${userInfo.email}</p>`
+    <p>${userInfo.email}</p></div>`
 }
 
 async function getUser(){

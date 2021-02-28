@@ -19,12 +19,13 @@ async function getData(){
             
             console.log(listOfUser[info].id);
             users.innerHTML += 
-            `<div class>
+            `<div class="userDiv">
             <a href="/detail.html?id=${listOfUser[info].id}" class="users"
+            <p>ID: ${listOfUser[info].id}</p>
             <p>First name: <strong>${listOfUser[info].first_name}</strong></p>
             <p>Last name: <strong>${listOfUser[info].last_name}</strong></p>
             <p>Email: <strong>${listOfUser[info].email}</strong></p>
-            </a></div><hr/>`
+            </a></div>`
         }
     } catch (error) {
         //console.log(error);

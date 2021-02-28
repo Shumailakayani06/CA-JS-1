@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
     <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+<script>(
+    $(document).ready(function(){
+        $('#icon').click(function(){
+            $('ul').toggleClass('show')
+        });
+    }));
+
+</script>
 </head>
 <body>
 <header>
     <nav>
+        <label class="logo">Kayani</label>
         <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/detail.html">Details</a></li>
@@ -19,10 +29,14 @@
             
             
         </ul>
+
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+         </label>
     </nav>
 
 </header>
-<h1 class="headingtext">Detail</h1>
+
 <form class="form">
     <input placeholder="Enter id to get user" type="text" id="user-id">
     <input type="button"  value ="Get user" onclick="getUser()">
