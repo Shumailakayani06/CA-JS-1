@@ -5,9 +5,9 @@ const fNameError = document.querySelector("#error-fName");
 const subject = document.getElementById("subject");
 const subjectError = document.querySelector("#error-subject");
 const email = document.getElementById("email");
-const emailError = document.querySelector("#error-email")
+const emailError = document.querySelector("#error-email");
 const adress = document.getElementById("adress");
-const adressError = document.querySelector("#error-adress")
+const adressError = document.querySelector("#error-adress");
 const errorElement = document.getElementById("error");
 const succesmessage = document.querySelector(".success-message");
 
@@ -36,7 +36,7 @@ function verifyForm(e){
     } else{
         
 
-        succesmessage.textContent="Your form has been submitted" 
+        succesmessage.textContent="Your form has been submitted";
         fName.value="";
         subject.value="";
         email.value="";

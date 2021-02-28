@@ -28,8 +28,8 @@ async function getData(){
             </a></div>`
         }
     } catch (error) {
-        //console.log(error);
-       // users.innerHTML = message("error",error);
+        console.log(error);
+       users.innerHTML = message("error",error);
         
     }
      
