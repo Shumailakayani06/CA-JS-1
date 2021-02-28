@@ -143,3 +143,29 @@ div {
   background-color: #c7dcf1;
   padding: 2em;
 }
+
+.form {
+  margin: 2em;
+}
+
+.detail-button {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  background: #34495e;
+  color: white;
+}
+
+.submitButton {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  background: #34495e;
+  color: white;
+}
+
+.formDiv {
+  margin: 2em;
+}
+
+label {
+  color: #34495e;
+}

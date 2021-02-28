@@ -21,7 +21,7 @@ async function getData(){
             users.innerHTML += 
             `<div class="userDiv">
             <a href="/detail.html?id=${listOfUser[info].id}" class="users"
-            <p>ID: ${listOfUser[info].id}</p>
+            <p>ID: <strong>${listOfUser[info].id}</strong></p>
             <p>First name: <strong>${listOfUser[info].first_name}</strong></p>
             <p>Last name: <strong>${listOfUser[info].last_name}</strong></p>
             <p>Email: <strong>${listOfUser[info].email}</strong></p>
